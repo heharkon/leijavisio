@@ -1,0 +1,24 @@
+<krpano version="1.18">
+	
+	<!-- the skin -->
+	<include url="skin/defaultskin.xml" />
+	
+	<!-- view settings -->
+	<view hlookat="0" vlookat="90" maxpixelzoom="1.0" fovmax="150" limitview="auto" stereographic="true" fisheye="1.0" fov="110" />
+    	<autorotate enabled="true" horizon="30"/>
+
+	<preview url="R0010059_final_rotated.tiles/preview.jpg" />
+
+	<image type="CUBE" multires="true" tilesize="512">
+		<level tiledimagewidth="1142" tiledimageheight="1142">
+			<cube url="R0010059_final_rotated.tiles/mres_%s/l2/%v/l2_%s_%v_%h.jpg" />
+		</level>
+		<level tiledimagewidth="512" tiledimageheight="512">
+			<cube url="R0010059_final_rotated.tiles/mres_%s/l1/%v/l1_%s_%v_%h.jpg" />
+		</level>
+		<mobile>
+			<cube url="R0010059_final_rotated.tiles/mobile_%s.jpg" />
+		</mobile>
+	</image>
+
+</krpano>
